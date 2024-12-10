@@ -8,7 +8,7 @@
     #stats    { display: inline-block; vertical-align: top; }
     #canvas   { display: inline-block; vertical-align: top; background: url(images/texture.jpg); box-shadow: 10px 10px 10px #999; border: 2px solid #333; }
     #menu     { display: inline-block; vertical-align: top; position: relative; }
-    #menu p   { margin: 0.5em 0; text-align: center; }
+    #menu p   { margin: 0.6em 0; text-align: center; }
     #menu p a { text-decoration: none; color: black; }
     #upcoming { display: block; margin: 0 auto; background-color: #E0E0E0; }
     #score    { color: blue; font-weight: bold; vertical-align: middle; }
@@ -75,7 +75,7 @@
         ctx     = canvas.getContext('2d'),
         ucanvas = get('upcoming'),
         uctx    = ucanvas.getContext('2d'),
-        speed   = { start: 0.6, decrement: 0.015, min: 0.1 }, // how long before piece drops by 1 row (seconds)
+        speed   = { start: 0.6, decrement: 0.025, min: 0.1 }, // how long before piece drops by 1 row (seconds)
         nx      = 10, // width of tetris court (in blocks)
         ny      = 20, // height of tetris court (in blocks)
         nu      = 5;  // width/height of upcoming preview (in blocks)
